@@ -1,0 +1,145 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: Workbay Interview
+meta:
+  id: wrk_561db294bacf41449d0d5b00bee0f569
+  created: 1766418488300
+  modified: 1766418488300
+  description: ""
+collection:
+  - name: Occupation
+    meta:
+      id: fld_5bfbd3937df149bca0aca26d3a422be1
+      created: 1766418505651
+      modified: 1766418505651
+      sortKey: -1766418505651
+      description: ""
+    children:
+      - url: http://localhost:3000/occupation
+        name: New Request
+        meta:
+          id: req_5498e607329e4b03ba99ea4252cd421c
+          created: 1766418525347
+          modified: 1766420594945
+          isPrivate: false
+          description: ""
+          sortKey: -1766418525347
+        method: POST
+        body:
+          mimeType: application/json
+          text: >-
+            {
+              "onetSocCode": "12-1011.00",
+              "title": "Chief Executives",
+              "description": "Determine and formulate policies and provide overall direction of companies or private and public sector organizations within guidelines set up by a board of directors or similar governing body. Plan, direct, or coordinate operational activities at the highest level of management with the help of subordinate executives and staff managers."
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.2.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3000/occupation/11-1011.03
+        name: New Request
+        meta:
+          id: req_df60bf08a27f4e85aead5487dd52d2ca
+          created: 1766418807974
+          modified: 1766421077598
+          isPrivate: false
+          description: ""
+          sortKey: -1766418807974
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.2.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Job Zone
+    meta:
+      id: fld_454696212709483088ebd924b4f71f0a
+      created: 1766418519114
+      modified: 1766418519114
+      sortKey: -1766418519114
+      description: ""
+    children:
+      - url: http://localhost:3000/job-zone/1
+        name: New Request
+        meta:
+          id: req_69eef1a69891442ab789d588202cfe3c
+          created: 1766418840397
+          modified: 1766420640197
+          isPrivate: false
+          description: ""
+          sortKey: -1766418840397
+        method: PATCH
+        body:
+          mimeType: application/json
+          text: ""
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.2.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3000/job-zone/1
+        name: New Request
+        meta:
+          id: req_b0bf89411cc5407c96468d9480ef987e
+          created: 1766418910778
+          modified: 1766418923905
+          isPrivate: false
+          description: ""
+          sortKey: -1766418910778
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/12.2.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_d0213c9af433adedad2ceda097bdc36523cd29d7
+    created: 1766418488304
+    modified: 1766418488304
+environments:
+  name: Base Environment
+  meta:
+    id: env_d0213c9af433adedad2ceda097bdc36523cd29d7
+    created: 1766418488302
+    modified: 1766418488302
+    isPrivate: false

@@ -1,0 +1,8 @@
+backend
+npm install
+docker compose up -d    // this is for db 
+npm run start:dev 
+
+front-end 
+npm install
+npm run dev
