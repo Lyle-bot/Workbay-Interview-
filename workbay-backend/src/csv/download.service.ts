@@ -52,11 +52,10 @@ export class DownloadCsvService {
       return row;
     });
 
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-call
     const csvContent = stringify(csvRows, {
       header: true,
       columns: Object.values(headers).map(String),
-    }) as string;
+    });
 
     const filename = `${entityName}-${Date.now()}.csv`;
 
