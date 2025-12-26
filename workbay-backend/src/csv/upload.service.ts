@@ -17,10 +17,6 @@ import { CsvUpload } from './entities/csv.entity';
 export class UploadCsvService {
   constructor(private readonly dataSource: DataSource) {}
 
-  getAvailableEntities() {
-    return Object.keys(IMPORTABLE_ENTITIES);
-  }
-
   async importCsv(
     entityName: ImportableEntityName,
     filePath: string,

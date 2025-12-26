@@ -37,21 +37,6 @@ export class CsvController {
     return this.csvService.getAvailableEntities();
   }
 
-  @Get()
-  findAll() {
-    return this.csvService.findAll();
-  }
-
-  @Get(':id')
-  findOne(@Param('id') id: string) {
-    return this.csvService.findOne(+id);
-  }
-
-  @Delete(':id')
-  remove(@Param('id') id: string) {
-    return this.csvService.remove(+id);
-  }
-
   // src/csv/csv.controller.ts
   @Post('upload')
   @UseInterceptors(
